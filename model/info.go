@@ -37,7 +37,7 @@ func GetWormholeTxCountInPeriod(from int64) (int, error) {
 	now := time.Now().Unix()
 	var count int
 	row := db.Table("blocks").
-		Select("sum(whccount) as count").Where("block_time between ? and ?", from, now).
+		Select("if(sum(whccount) is null,0,sum(whccount)) as count").Where("block_time between ? and ?", from, now).
 		Row()
 
 	err := row.Scan(&count)
