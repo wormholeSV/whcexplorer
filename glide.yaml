@@ -1,0 +1,39 @@
+package: github.com/copernet/whcexplorer
+import:
+- package: github.com/bcext/cashutil
+  version: 9ba6cf2922836010e02658df743533b995b0d947
+- package: github.com/bcext/gcash
+  version: 067de8b6c8108fb5df47ccbea453b0c6e727d5ba
+  subpackages:
+  - blockchain
+  - chaincfg
+  - chaincfg/chainhash
+- package: github.com/copernet/whc.go
+  version: 802d14cc44073f7f49954cbdd48c67d74c7e8712
+  subpackages:
+  - btcjson
+  - rpcclient
+- package: github.com/copernet/whccommon
+  version: 82967350b19b005cabce0441050aecce4d8b11e4
+  repo: https://wormhole-cash:RbVUgHsQGKyy84MoBkV3k1X@gitlab.com/copernet/whccommon.git
+  subpackages:
+  - log
+  - model
+- package: github.com/garyburd/redigo
+  subpackages:
+  - redis
+- package: github.com/gin-gonic/gin
+- package: github.com/go-sql-driver/mysql
+- package: github.com/jinzhu/gorm
+- package: github.com/ory/dockertest
+- package: github.com/pkg/errors
+- package: github.com/shopspring/decimal
+- package: github.com/sirupsen/logrus
+- package: github.com/spf13/viper
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: github.com/stretchr/testify
+  version: v1.2.2
+  subpackages:
+  - assert
