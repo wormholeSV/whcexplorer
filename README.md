@@ -15,8 +15,8 @@ Wormhole is a fast, portable Omni Layer implementation that is based off the Bit
 | Mysql | 5.7+ |
 | Golang | 1.10+ |
 | Redis | 4.0+ |
-|[Wormhole](https://github.com/copernet/whcengine-go)|0.2.2|
-|[Engine](https://github.com/copernet/wormhole)|-|
+|[Wormhole](https://github.com/copernet/wormhole)|0.2.2|
+|[Engine](https://github.com/copernet/whcengine)|-|
 
 #### Database Init
 
