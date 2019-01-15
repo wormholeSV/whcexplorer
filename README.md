@@ -16,40 +16,26 @@ Wormhole is a fast, portable Omni Layer implementation that is based off the Bit
 | Golang | 1.10+ |
 | Redis | 4.0+ |
 |[Wormhole](https://github.com/copernet/wormhole)|0.2.2|
-|[Engine](https://github.com/copernet/whcengine)|-|
-
-#### Database Init
-
-1、Once the mysql installation is complete.you need create your database first.
-
-	#connect your database
-	mysql -u{your-user} -p{your-password} -h{your-host} -P{your-port}
-	
-	#create database
-	mysql> create database wormhole;
-2、Init tables
-	
-	git clone https://github.com/copernet/whccommon
-	cd model/operation/setup/
-	go build
-	./setup --host={your-host} --port={your-port} --user={your-user} --passwd={your-password} --db=wormhole
+|[Engine](https://github.com/wormholeSV/whcengine)|0.0.1|
 
 #### Config Init
 
-	git clone https://github.com/copernet/whcexplorer
+	go get -d github.com/wormholeSV/whcexplorer
+	cd ${gopath}/src/github.com/wormholeSV/whcexplorer
 	cp conf.yml.sample conf.yml
-	
+
 	#you need modify db、redis、rpc、log to your local config
 #### How To Run
 
-	cd ${gopath}/src/github.com/copernet/whcexplorer
+	cd ${gopath}/src/github.com/wormholeSV/whcexplorer
 	mkdir logs
+	touch logs/system.log
 	go build
-	
+
 	#start
 	tools/run start whcexplorer
 	#stop 
 	tools/run stop whcexplorer
-	
+
 ## Document
 - [API Document](./doc/api.md)

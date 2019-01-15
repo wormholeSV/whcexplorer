@@ -1,14 +1,14 @@
 go_version: 1.10.0
 version: 0.0.1
 
-testnet: true
+# testnet: true
 
 db:
-  user: root
+  user: your-username
   passwd: your-custom-password
   host: 127.0.0.1
   port: 3306
-  database: database-name
+  database: wormhole
   sql_log: true
 redis:
   passwd: your-custom-password
@@ -22,8 +22,8 @@ redis:
 rpc:
   user: your-rpc-username
   passwd: your-rpc-password
-  host: 127.0.0.1
-  port: 18332
+  host: your-rpc-host
+  port: your-rpc-port
 log:
   filename: app.log
   level: debug
